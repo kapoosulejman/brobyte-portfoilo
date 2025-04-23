@@ -1,11 +1,26 @@
 body {
-    background-color: wheat;
-    display: grid;
-    grid-template-rows: 80px ,1fr;
+    margin: 0;
+    background-color: rgb(203, 203, 203);
+    font-family: Arial, sans-serif;
 }
 
 header {
     position: sticky;
-    height: 100%;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    background-color: rgb(131, 104, 141);
+    color: white;
+    height: 75px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo img {
+    width: 80px;
+    margin-left: 10px;
+}
+
+.rightsection {
+    flex: 1;
 }
