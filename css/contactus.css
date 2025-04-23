@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    background-color: rgb(203, 203, 203);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    background-color: rgb(131, 104, 141);
+    color: white;
+    height: 75px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo img {
+    width: 80px;
+    margin-left: 10px;
+}
+
+.rightsection {
+    flex: 1;
+}
