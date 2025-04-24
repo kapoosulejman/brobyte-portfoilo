@@ -24,3 +24,157 @@ header {
 .rightsection {
     flex: 1;
 }
+
+.container {
+    text-align: center;
+}
+
+.paragraf-contact {
+    text-align: center;
+}
+
+.custom-box {
+    background-color: #2c2c2c;
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Dodana tranzicija za podizanje boxova */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.custom-box:hover {
+    transform: translateY(-10px); /* Efekt podizanja boxa */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Jači sjeni oko boxa */
+}
+
+/* Uklanjanje plave boje sa svih linkova unutar .custom-box */
+.custom-box a {
+    color: white !important; /* Dodajemo !important da bi prevladalo sve stilove */
+    text-decoration: none !important; /* Dodajemo !important da bi uklonili podcrtavanje */
+}
+
+/* Kada je link hoveran, boja ostaje bijela i bez podcrtavanja */
+.custom-box a:hover {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.custom-box li a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.custom-box li a:hover {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.custom-input {
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+    background-color: #1a1a1a;
+    color: white;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.custom-input:hover {
+    transform: scale(1.05); /* Povećanje input polja */
+}
+
+
+.text-info {
+    color: #000000;
+    text-decoration: none;
+}
+
+.text-info:hover {
+    text-decoration: underline;
+}
+
+.drustvene-mreze li a {
+    display: inline-block;
+    background-color: #0c0c0c;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #444;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    margin: 10px;
+    text-transform: uppercase;
+    
+}
+.drustvene-mreze li a:hover {
+    background-color: #333;
+    transform: scale(1.05);
+    box-shadow:black
+}
+
+.email p a {
+    display: inline-block;
+    background-color: #0c0c0c;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid #444;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    margin: 5px;
+}
+
+.email p a:hover {
+    background-color: #333;
+    transform: scale(1.05);
+    box-shadow: black;
+}
+
+
+.bottom-buttons {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex; /* Flex container */
+    gap: 20px; /* Razmak između gumba */
+    justify-content: center;
+    z-index: 999;
+    border-color: black;
+}
+
+.bottom-buttons a {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    text-transform: uppercase;
+}
+
+.bottom-buttons a:hover {
+    background-color: #333;
+    transform: scale(1.05);
+    box-shadow: black;
+    border-color: black;
+    color: white;
+}
